@@ -1,4 +1,4 @@
-/* Main Container */
+
 .container {
   color: white;
   min-height: 100vh;
@@ -8,7 +8,7 @@
   position: relative;
 }
 
-/* Hero Section */
+
 .page1 {
   position: relative;
   background-image: url("/abstract.webp");
@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 
-/* Header Section */
+
 .header {
   position: absolute;
   top: clamp(1rem, 5%, 3rem);
@@ -43,7 +43,7 @@
   margin: 0.25rem 0 0.25rem 0.25rem;
 }
 
-/* Content Layout */
+
 .content-wrapper {
   display: flex;
   height: 100%;
@@ -52,7 +52,7 @@
   gap: clamp(1rem, 3vw, 3rem);
 }
 
-/* Text Container */
+
 .text-container {
   text-transform: uppercase;
   color: white;
@@ -63,7 +63,7 @@
   z-index: 3;
 }
 
-/* Video Container */
+
 .video-container {
   position: relative;
   z-index: 1;
@@ -78,7 +78,7 @@
   right: 50%;
 }
 
-/* Large Screens (≥1024px) */
+
 @media (min-width: 1024px) {
   .container {
       height: 45vw;
@@ -99,7 +99,7 @@
 
 }
 
-/* Medium Screens (640px - 1023px) */
+
 @media (min-width: 640px) and (max-width: 1023px) {
   .container {
       min-height: 100vh;
@@ -168,7 +168,7 @@
   }
 }
 
-/* Extra Small Screens (<480px) */
+
 @media (max-width: 480px) {
   .title {
       font-size: 1.75rem;
@@ -184,7 +184,7 @@
   }
 }
 
-/* Handle Landscape Mode on Mobile */
+
 @media (max-height: 500px) and (orientation: landscape) {
   .container {
       min-height: 120vh;
