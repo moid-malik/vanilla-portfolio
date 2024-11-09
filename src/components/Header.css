@@ -1,0 +1,58 @@
+.header-container {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 100;
+    top: 2.75rem;
+    right: 2rem;
+  }
+  
+  @media (min-width: 640px) {
+    .header-container {
+      right: 2rem;
+      top: 2.75rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .header-container {
+      right: 3rem;
+      top: 3rem;
+    }
+  }
+  
+  .hire-me-button {
+    display: inline-flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    border: 1px solid #1e2631;
+    background: linear-gradient(110deg, #000103 45%, #1e2631 55%, #000103);
+    background-size: 200% 100%;
+    padding: 0 1.5rem;
+    font-weight: 500;
+    color: #cbd5e1;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .hire-me-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #94a3b8, 0 0 0 4px #f8fafc;
+  }
+  
+  .hire-me-button.animate-shimmer {
+    animation: shimmer 1.5s infinite linear;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  

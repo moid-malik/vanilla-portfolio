@@ -1,0 +1,37 @@
+.page1bottom-container {
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .page1bottom-container {
+      bottom: 2rem;
+      left: 1rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .page1bottom-container {
+      bottom: 3rem;
+      left: 6rem;
+    }
+  }
+  
+  .page1bottom-text {
+    font-size: 1.125rem;
+    line-height: 1;
+  }
+  
+  .page1bottom-title {
+    letter-spacing: -0.015em;
+    font-family: var(--font4);
+    font-weight: 500;
+  }
+  
+  .page1bottom-subtitle {
+    font-size: 0.875rem;
+    font-family: var(--font3);
+    font-weight: 500;
+  }
+  

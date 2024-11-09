@@ -1,0 +1,114 @@
+/* Video Container Section */
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto; /* Center the container */
+  padding: clamp(2rem, 4vw, 4rem) 0;
+  min-height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  left: 50%;
+  transform: translateX(-50%); /* Center using transform */
+}
+
+/* Video Wrapper */
+.video-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto; /* Center the wrapper */
+}
+
+/* Video Content */
+.video-content {
+  letter-spacing: -0.05em;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto; /* Center the content */
+}
+
+/* Video Element */
+.video-content video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: clamp(8px, 2vw, 16px);
+  display: block; /* Remove any potential inline spacing */
+  margin: 0 auto; /* Center the video */
+}
+
+/* Large Screens */
+@media (min-width: 1024px) {
+  .video-container {
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: 4rem 0;
+  }
+
+  .video-content {
+      width: 70%;
+      margin: 0 auto;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .video-container {
+      height: 600px;
+      padding: 3rem 0;
+  }
+
+  .video-content {
+      width: 85%;
+      margin: 0 auto;
+      height: 400px;
+  }
+  
+  .video-content video {
+      object-fit: contain;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 639px) {
+  .video-container {
+      height: 400px;
+      padding: 2rem 0;
+      min-height: unset;
+  }
+
+  .video-content {
+      width: 90%;
+      margin: 0 auto;
+      height: 300px;
+  }
+  
+  .video-content video {
+      object-fit: contain;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .video-container {
+      height: 300px;
+  }
+
+  .video-content {
+      height: 225px;
+  }
+}
+
+/* Prevent overlap with next section */
+.video-container + * {
+  margin-top: 0;
+  padding-top: clamp(2rem, 4vw, 4rem);
+}

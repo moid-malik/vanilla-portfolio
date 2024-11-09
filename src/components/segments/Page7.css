@@ -1,0 +1,146 @@
+@font-face {
+  font-family: font5;
+  src: url("/fonts/file5.woff2");
+}
+#contact {
+  height: 100vh;
+  width: 100%;
+  padding: clamp(1rem, 3vw, 2rem);
+  box-sizing: border-box;
+}
+
+.page7 {
+  height: 100%;
+  width: 100%;
+  border-radius: clamp(25px, 5vw, 50px);
+  padding: clamp(1rem, 4vw, 2rem);
+  box-sizing: border-box;
+  color: white;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.titlee {
+  margin-top: 6rem;
+  font-family: font5, sans-serif;
+  font-size: 12rem;
+  line-height: 0rem;
+}
+
+.titlee span {
+  color: #808080;
+}
+
+.titlee h1:last-child {
+  font-size: 17rem;
+  line-height: 21rem;
+  letter-spacing: clamp(0.3rem, 1vw, 0.9rem);
+}
+
+.react-logo {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.footer {
+  margin-top: -15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  font-size: clamp(0.75rem, 2vw, 0.875rem);
+}
+
+.contact-info h3 {
+  font-family: "font6", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  margin-bottom: 1rem;
+}
+
+.divider {
+  display: none;
+  width: 90%;
+  height: 1px;
+  background-color: white;
+  margin: 0.5rem 0;
+}
+
+.footer-text {
+  text-align: right;
+  font-size: clamp(0.75rem, 2vw, 0.875rem);
+}
+
+.footer-text p {
+  letter-spacing: -1px;
+  font-weight: 100;
+}
+
+.copyright {
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+}
+
+@media (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .page7 {
+    padding: 1rem;
+  }
+
+  .titlee h1:last-child {
+    font-size: 12rem;
+    line-height: 18rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+
+  .divider {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact {
+    padding: 0.5rem;
+  }
+
+  .page7 {
+    border-radius: 25px;
+  }
+
+  .footer {
+    gap: 1rem;
+  }
+}

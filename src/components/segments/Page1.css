@@ -1,0 +1,199 @@
+/* Main Container */
+.container {
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0.7rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Hero Section */
+.page1 {
+  position: relative;
+  background-image: url("/abstract.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: clamp(20px, 3vw, 35px);
+  overflow: hidden;
+}
+
+/* Header Section */
+.header {
+  position: absolute;
+  top: clamp(1rem, 5%, 3rem);
+  left: clamp(1rem, 5%, 3rem);
+  z-index: 2;
+}
+
+.title {
+  color: white;
+  font-size: clamp(2rem, 4vw, 3.75rem);
+  letter-spacing: -0.05em;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title-underline {
+  height: 1px;
+  background-color: white;
+  width: clamp(100px, 9.4vw, 200px);
+  margin: 0.25rem 0 0.25rem 0.25rem;
+}
+
+/* Content Layout */
+.content-wrapper {
+  display: flex;
+  height: 100%;
+  padding: clamp(1rem, 3vw, 3rem);
+  position: relative;
+  gap: clamp(1rem, 3vw, 3rem);
+}
+
+/* Text Container */
+.text-container {
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  z-index: 3;
+}
+
+/* Video Container */
+.video-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sigma-video {
+  height: 34vw;
+  position: absolute;
+  right: 50%;
+}
+
+/* Large Screens (≥1024px) */
+@media (min-width: 1024px) {
+  .container {
+      height: 45vw;
+      min-height: 600px;
+      max-height: 900px;
+  }
+
+  .content-wrapper {
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .text-container {
+      margin-left: 2rem;
+      padding-top: 0;
+      max-width: 50%;
+  }
+
+}
+
+/* Medium Screens (640px - 1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .container {
+      min-height: 100vh;
+  }
+
+  .content-wrapper {
+      flex-direction: column;
+      justify-content: center;
+      padding: 6rem 2rem 2rem;
+      gap: 2rem;
+  }
+
+  .text-container {
+      padding: 0;
+      text-align: center;
+      justify-content: center;
+  }
+
+  .video-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+  }
+
+  .sigma-video {
+      height: auto;
+      max-width: 80%;
+  }
+}
+
+@media (max-width: 639px) {
+  .container {
+      min-height: 100vh;
+      padding: 0.5rem;
+  }
+
+  .content-wrapper {
+      flex-direction: column;
+      padding: 3rem 1rem 1rem;
+      gap: 1rem;
+  }
+
+  .text-container {
+    flex-direction: column;
+      padding: 0;
+      text-align: center;
+      justify-content: center;
+      margin-top: 9rem;
+  }
+
+  .video-container {
+      width: 100%;
+      margin-top: 1rem;
+  }
+
+  .sigma-video {
+    position: static;
+      height: auto;
+      width: 90%;
+      margin: 0 auto 7rem auto;
+  }
+
+  .header {
+      width: 90%;
+  }
+}
+
+/* Extra Small Screens (<480px) */
+@media (max-width: 480px) {
+  .title {
+      font-size: 1.75rem;
+  }
+
+  .content-wrapper {
+      padding: 4rem 0.5rem 0.5rem;
+  }
+
+  .sigma-video {
+    position: static;
+      width: 95%;
+  }
+}
+
+/* Handle Landscape Mode on Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .container {
+      min-height: 120vh;
+  }
+
+  .content-wrapper {
+      padding-top: 5rem;
+  }
+  .sigma-video{
+    position: static;
+  }
+}

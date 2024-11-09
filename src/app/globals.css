@@ -1,0 +1,58 @@
+@import url("https://fonts.cdnfonts.com/css/qalisha-signature-script");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: font1;
+  src: url("/fonts/file.woff2");
+}
+@font-face {
+  font-family: font2;
+  src: url("/fonts/file2.woff2");
+}
+@font-face {
+  font-family: font3;
+  src: url("/fonts/file3.woff2");
+}
+@font-face {
+  font-family: font4;
+  src: url("/fonts/file4.woff2");
+}
+@font-face {
+  font-family: font5;
+  src: url("/fonts/file5.woff2");
+}
+@font-face {
+  font-family: font6;
+  src: url("/fonts/file6.woff2");
+}
+@font-face {
+  font-family: signature;
+  src: url("/fonts/signature.woff");
+}
+@font-face {
+  font-family: signatureItalic;
+  src: url("/fonts/signatureitalic.woff");
+}
+.page1 {
+  background-image: url("/abstract.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#page1-child {
+  position: relative;
+  perspective: 1000px;
+}
+  
+#tilttext {
+  width: fit-content;
+}
+.rotateText {
+  transform-origin: 100% 70%;
+}
+.page7 {
+  background-image: url("/abstract.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
